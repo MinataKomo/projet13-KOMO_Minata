@@ -11,6 +11,11 @@ class AdController extends Controller
     {
         return view('create');
     }
+    public function liste()
+    {
+        $ads = Ad::all();
+        return view('welcome', compact('ads'));
+    }
     public function store(Adstore $request)
     {
        $validated = $request->validated();
