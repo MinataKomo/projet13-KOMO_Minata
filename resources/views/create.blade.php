@@ -9,7 +9,7 @@
     @csrf
 <div class="form-group">
     <label for="exampleInputEmail">titre</label>
-    <input type="text" class="form-control {{ $errors->has('title') ? 'is-invalid' : '' }} " id="title" placeholder="" nam="title">
+    <input type="text" class="form-control {{ $errors->has('title') ? 'is-invalid' : '' }} " id="title" placeholder="" name="title">
 
     @if($errors->has('title'))
     <span class="invalid-feedback">{{$errors->first('title') }}</span>
